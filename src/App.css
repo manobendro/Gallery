@@ -1,0 +1,80 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.gallery {
+  line-height: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+.gallery-item:nth-child(1) {
+  grid-row: span 2;
+  grid-column: span 2;
+  height: 305px;
+  width: 305px;
+}
+
+.gallery-item {
+  height: 150px;
+  width: 150px;
+  background-color: #FFF;
+  background-size: cover;
+  text-align: left;
+  transition-duration: 0.09s;
+  transition-timing-function: ease-in;
+  transition: opacity;
+}
+
+.gallery-item input {
+  margin: 20px;
+  height: 20px;
+  width: 20px;
+  opacity: 1;
+}
+
+.toolbar {
+  height: 50px;
+  width: 770px;
+  margin-bottom: 5px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolbar a {
+  margin-right: 20px;
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: grab;
+}
+
+.toolbar a:hover {
+  text-decoration: underline;
+}
+
+.toolbar span {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.handler{
+  opacity: 0.9;
+  position: fixed;
+  border: 2px dotted red;
+  border-radius: 8px;
+  background-color: #FFF;
+  transition: width, height;
+  transition-duration: 0.09s;
+  transition-timing-function: ease-in;
+}
