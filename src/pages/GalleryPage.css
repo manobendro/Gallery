@@ -1,0 +1,90 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  background-color: #0f0d0e;
+  background-image: repeating-linear-gradient(to right, #231f20, #231f20 1px, transparent 1px, transparent 30px), repeating-linear-gradient(to bottom, #231f20, #231f20 1px, transparent 1px, transparent 30px);
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: gainsboro;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.gallery {
+  line-height: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+.toolbar {
+  height: 50px;
+  width: 850px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.toolbar a {
+  margin-right: 20px;
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: grab;
+}
+
+.toolbar a:hover {
+  text-decoration: underline;
+}
+
+.toolbar span {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.handler {
+  opacity: 0.9;
+  position: fixed;
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 8px;
+  background-color: #FFF;
+  transition: width, height;
+  transition-duration: 0.09s;
+  transition-timing-function: ease-in;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+  cursor: move;
+}
+
+
+.add-image {
+  display: flex;
+  flex-direction: column;
+  height: 146px;
+  width: 146px;
+  border: 2px dotted gray;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.add-image img {
+  height: 24px;
+  width: 24px;
+  margin: 10px;
+}
